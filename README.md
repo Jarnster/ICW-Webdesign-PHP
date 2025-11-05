@@ -29,7 +29,7 @@ In deze README.md kan je de inhoudstabel vinden voor elk hoofdstuk. Alle PowerPo
 In H1 werkten we met gegevens die we vooraf instelde. Nu gaan we, met behulp van formulieren en andere parameters (zoals $_GET) gebruikersinvoer accepteren.
 
 ### Inhoud
-- HTML form elementen instellen om correct HTTP-request te maken
+- HTML form elementen instellen om correct HTTP-request te maken ("method" attribute)
 - $_POST, $_GET, $_SESSION, isset(), empty()
 - String methods
 

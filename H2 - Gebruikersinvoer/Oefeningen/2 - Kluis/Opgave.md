@@ -4,6 +4,19 @@
 
 ---
 
+Algemene Tip in H2:
+
+Zet dit stukje PHP code bovenaan je project om de inhoud van GET en POST superglobals in te lezen:
+
+``
+<?php
+print_r($_GET);
+print_r($_POST);
+?>
+``
+
+---
+
 ### Opgave:
 - Maak een pagina die een PIN-code vraagt en je naar een extern webadres verwijst als de code juist is
 

@@ -4,6 +4,19 @@
 
 ---
 
+Algemene Tip in H2:
+
+Zet dit stukje PHP code bovenaan je project om de inhoud van GET en POST superglobals in te lezen:
+
+``
+<?php
+print_r($_GET);
+print_r($_POST);
+?>
+``
+
+---
+
 ### Opgave:
 - Maak een HTML form element. Verzin 3 vragen voor je quiz.
 
