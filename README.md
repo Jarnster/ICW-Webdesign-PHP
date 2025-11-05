@@ -37,23 +37,26 @@ In H1 werkten we met gegevens die we vooraf instelde. Nu gaan we, met behulp van
 
 ## [H3] Databases en Beveiliging
 
-### Inhoud:
+Dit is een groot hoofdstuk waarin je omgang met databases leert, maar ook het veilig gebruik ervan. Je leert ook allerlei zaken bij over hoe password hashing en security het best werkt.
+
+### Inhoud
 - MySQL/MariaDB
 - Gebruik van phpMyAdmin (PMA)
 - Prepared statements (PDO)
 - Create, Read, Update, Delete (CRUD)
-- SQL Injectie
+- SQL Injection (In-Band, Inferential/Blind, Out-of-Band)
 - Validatie en sanitizatie
 - Password hashing
-- Sessies uitgebreid
+- Hashing algoritmes en password cracking (evt. CrackStation) (Brute Force vs Dictionary)
+- Sessies uitgebreid (Cookies, storage, syntax)
 - Authenticatie: inloggen, registreren, uitloggen, beschermde pagina
 
 ---
 
-## H4 Object-oriented programming (OOP):
+## [H4] Object-oriented programming (OOP)
 TBD
 
 ---
 
-## H5 Application Programming Interface (API):
+## [H5] Application Programming Interface (API)
 TBD
