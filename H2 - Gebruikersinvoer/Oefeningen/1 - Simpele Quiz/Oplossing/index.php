@@ -1,4 +1,7 @@
 <?php
+// H2 Oef 1
+
+// Algemene Debug Tip H2
 print_r($_GET);
 print_r($_POST);
 
@@ -30,12 +33,12 @@ if (isset($_POST['question1'])) {
         InterpreteQuestionAnswer(false);
     }
 } else {
-    InterpreteQuestionAnswer(true);
+    InterpreteQuestionAnswer(false);
 }
 
 // Question 2:
 if (isset($_POST['question2'])) {
-    if (strtolower($_POST['question2']) == 4) {
+    if (intval($_POST['question2']) == 4) {
         InterpreteQuestionAnswer(true);
     } else {
         InterpreteQuestionAnswer(false);
