@@ -5,7 +5,7 @@
 *Doel: Educatief Gebruik (volgens LICENSE.md)*
 *Deze repository blijft beschikbaar. Aanpassingen kunnen aangevraagd worden via Pull Requests.*
 
-In deze README.md kan je de inhoudstabel vinden voor elk hoofdstuk. Alle PowerPoints, Oefeningen, ... staan in de individuele mappen van elk hoofdstuk.
+In deze README.md kan je de inhoudstabel vinden voor elk hoofdstuk. Alle PowerPoints, Oefeningen, Quiz, ... staan in de individuele mappen van elk hoofdstuk.
 
 ---
 
@@ -22,6 +22,8 @@ In deze README.md kan je de inhoudstabel vinden voor elk hoofdstuk. Alle PowerPo
 - Headers
 - Debugging: error logging, var_dump, print_r
 
+Kahoot H1+H2: https://create.kahoot.it/share/icw-webdesign-php-h1-en-h2/b572320c-66c4-425b-b6f9-ba7b2af521c4
+
 ---
 
 ## [H2] Gebruikersinvoer
@@ -32,6 +34,8 @@ In H1 werkten we met gegevens die we vooraf instelde. Nu gaan we, met behulp van
 - HTML form elementen instellen om correct HTTP-request te maken ("method" attribute)
 - $_POST, $_GET, $_SESSION, isset(), empty()
 - String methods
+
+Kahoot H1+H2: https://create.kahoot.it/share/icw-webdesign-php-h1-en-h2/b572320c-66c4-425b-b6f9-ba7b2af521c4
 
 ---
 
@@ -50,6 +54,8 @@ Dit is een groot hoofdstuk waarin je omgang met databases leert, maar ook het ve
 - Hashing algoritmes en password cracking (evt. CrackStation) (Brute Force vs Dictionary)
 - Sessies uitgebreid (Cookies, storage, syntax)
 - Authenticatie: inloggen, registreren, uitloggen, beschermde pagina
+
+Kahoot H3: https://create.kahoot.it/share/icw-webdesign-php-h3/03a6028c-46fb-49a4-bca1-eec613519109
 
 ---
 
