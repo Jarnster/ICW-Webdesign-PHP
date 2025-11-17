@@ -1,3 +1,21 @@
+
+<style>
+    .red {
+        border: 4px solid red;
+    }
+
+    .green {
+        border: 4px solid green;
+    }
+
+    .input {
+        /* border: 2px solid grey; */
+        border-radius: 25%;
+        width: 250px;
+        height: 100px;
+    }
+</style>
+
 <?php
 // (⭐Uitbreiding) H2 Oef 1
 
@@ -9,6 +27,9 @@ print_r($_POST);
 $answers = array();
 
 $flag = isset($_POST['submit']) || false; // Flag om bij te houden of de quiz verzonden is
+
+$correct = 0;
+$fout = 0;
 
 // Helper functions
 function SetAnswerCorrect(int $id, bool $isCorrect = false)
@@ -23,6 +44,16 @@ function GetAnswerCorrect(int $id): bool
     global $answers;
 
     return $answers[$id];
+}
+
+function RenderAnswerCorrectness(int $id)
+{
+    if(GetAnswerCorrect($id))
+    {
+        echo "green";
+    }
+    
+    echo "red";
 }
 
 // 2. Vragen controleren en array fields aanpassen indien nodig
@@ -71,9 +102,9 @@ else{
 ?>
 
 <form method="POST">
-    <input type="text" name="question1" placeholder="Wat is je lievelingseten?">
+    <input type="text" name="question1" class="input <?= RenderAnswerCorrectness(1); ?>" placeholder="Wat is je lievelingseten?">
     <hr>
-    <input type="text" name="question2" placeholder="Hoeveel kinderen heeft de koning?">
+    <input type="text" name="question2" class="input <?= RenderAnswerCorrectness(2); ?>" placeholder="Hoeveel kinderen heeft de koning?">
     <hr>
     <button type="submit" name="submit">Controleer mijn antwoorden</button>
 </form>
