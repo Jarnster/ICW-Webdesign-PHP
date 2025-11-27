@@ -10,6 +10,7 @@ print_r($_POST);
 // Configuration values \\
 $ATTEMPTS_SESSION_INDEX = "ATTEMPTS";
 $MAX_ATTEMPTS = 4;
+$CORRECT_CODE = 1234;
 
 // HELPER FUNCTIONS \\
 
@@ -60,6 +61,30 @@ function getRemainingAttempts()
     return $MAX_ATTEMPTS - $userAttempts;
 }
 
+function checkUserBlock()
+{
+    if (getRemainingAttempts() <= 0) {
+        exit("You have been blocked.");
+    }
+}
+
+function handleUserInput($userCode) {
+    global $CORRECT_CODE;
+
+    if ($userCode == $CORRECT_CODE) {
+        handleVaultOpen();
+        resetAttempts();
+    }
+    else{
+        increaseAttempts();
+        $remainingAttempts = getRemainingAttempts();
+        echo "<div class='warning'>";
+        echo "<h1>Waarschuwing</h1>";
+        echo "<b>Je hebt nog $remainingAttempts pogingen over voordat u geblokkeerd zal worden.</b>";
+        echo "</div>";
+    }
+}
+
 function handleVaultOpen()
 {
     $KLUIS_URL = "https://sjabi.smartschool.be"; // Gewenste doellocatie kiezen
@@ -68,14 +93,13 @@ function handleVaultOpen()
     echo "</div>"; // End of Vault class div
 }
 
-
-$CORRECT_CODE = 1234;
 if (isset($_POST['submit']) && isset($_POST['code'])) {
-    $user_code = intval($_POST['code']);
-    if ($user_code == $CORRECT_CODE) {
-        handleVaultOpen(); // Call losse helper functie bij "kluis openmaken"
-    }
+    $userCode = intval($_POST['code']);
+    handleUserInput($userCode);
+    
 }
+
+checkUserBlock();
 ?>
 <style>
     body {
