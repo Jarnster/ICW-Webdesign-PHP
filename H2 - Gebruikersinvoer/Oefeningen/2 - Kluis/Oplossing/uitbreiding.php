@@ -12,8 +12,9 @@ if ($Debugging) {
 
 // Configuration values \\
 $ATTEMPTS_SESSION_INDEX = "ATTEMPTS";
-$MAX_ATTEMPTS = 99;
+$MAX_ATTEMPTS = 8;
 $CORRECT_CODE = 1234;
+$THRESHOLD_RED = 2;
 
 // HELPER FUNCTIONS \\
 
@@ -74,7 +75,7 @@ function checkUserBlock()
 
 function handleUserInput($userCode)
 {
-    global $CORRECT_CODE;
+    global $CORRECT_CODE, $THRESHOLD_RED;
 
     if ($userCode == $CORRECT_CODE) {
         handleVaultOpen();
@@ -82,7 +83,14 @@ function handleUserInput($userCode)
     } else {
         increaseAttempts();
         $remainingAttempts = getRemainingAttempts();
-        echo "<div class='warning'>";
+
+        $extraCSS_class = "";
+        if($remainingAttempts <= $THRESHOLD_RED)
+        {
+            $extraCSS_class = "red";
+        }
+
+        echo "<div class='warning $extraCSS_class'>";
         echo "<h1>Waarschuwing</h1>";
         echo "<b>Je hebt nog $remainingAttempts pogingen over voordat u geblokkeerd zal worden.</b>";
         echo "</div>";
@@ -136,6 +144,10 @@ checkUserBlock();
         padding: 5px;
         border: 5px solid grey;
         border-radius: 5px;
+    }
+
+    .red {
+        background: maroon;
     }
 </style>
 <title>Kluis oefening uitbreiding</title>
