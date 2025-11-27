@@ -1,15 +1,18 @@
 <?php
 session_start(); // Very important
 
+$Debugging = false;
 // H2 Oef 2 - Uitbreiding
 // Aanpassing aan de opdracht: ipv header() echo <a> (headers already sent error) 
 // Algemene Debug Tip H2
-print_r($_GET);
-print_r($_POST);
+if ($Debugging) {
+    print_r($_GET);
+    print_r($_POST);
+}
 
 // Configuration values \\
 $ATTEMPTS_SESSION_INDEX = "ATTEMPTS";
-$MAX_ATTEMPTS = 4;
+$MAX_ATTEMPTS = 99;
 $CORRECT_CODE = 1234;
 
 // HELPER FUNCTIONS \\
@@ -61,6 +64,7 @@ function getRemainingAttempts()
     return $MAX_ATTEMPTS - $userAttempts;
 }
 
+// This function checks if the current user has exceeded their maximum attempts, and blocks them from accessing this page when they have exceeded the threshold
 function checkUserBlock()
 {
     if (getRemainingAttempts() <= 0) {
@@ -68,14 +72,14 @@ function checkUserBlock()
     }
 }
 
-function handleUserInput($userCode) {
+function handleUserInput($userCode)
+{
     global $CORRECT_CODE;
 
     if ($userCode == $CORRECT_CODE) {
         handleVaultOpen();
         resetAttempts();
-    }
-    else{
+    } else {
         increaseAttempts();
         $remainingAttempts = getRemainingAttempts();
         echo "<div class='warning'>";
@@ -96,7 +100,6 @@ function handleVaultOpen()
 if (isset($_POST['submit']) && isset($_POST['code'])) {
     $userCode = intval($_POST['code']);
     handleUserInput($userCode);
-    
 }
 
 checkUserBlock();
@@ -124,6 +127,15 @@ checkUserBlock();
         text-decoration: none;
         font-weight: bold;
         color: white;
+    }
+
+    .warning {
+        background: orangered;
+        color: whitesmoke;
+        text-align: center;
+        padding: 5px;
+        border: 5px solid grey;
+        border-radius: 5px;
     }
 </style>
 <title>Kluis oefening uitbreiding</title>
