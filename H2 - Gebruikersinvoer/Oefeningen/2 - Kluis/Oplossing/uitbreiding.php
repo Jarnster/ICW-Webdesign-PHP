@@ -1,9 +1,10 @@
 <?php
 session_start(); // Very important
 
-$Debugging = false;
 // H2 Oef 2 - Uitbreiding
 // Aanpassing aan de opdracht: ipv header() echo <a> (headers already sent error) 
+
+$Debugging = false;
 // Algemene Debug Tip H2
 if ($Debugging) {
     print_r($_GET);
