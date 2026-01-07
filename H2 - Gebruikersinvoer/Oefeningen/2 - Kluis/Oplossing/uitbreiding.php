@@ -100,7 +100,7 @@ function handleUserInput($userCode)
 
 function handleVaultOpen()
 {
-    $KLUIS_URL = "https://sjabi.smartschool.be"; // Gewenste doellocatie kiezen
+    $KLUIS_URL = "https://youtube.com"; // Gewenste doellocatie kiezen
     echo "<div class='vault'>"; // Start Vault class div
     echo "<a href='$KLUIS_URL'>📜 KLIK OM DE INHOUD VAN JE KLUIS TE OPENEN 📜</a>";
     echo "</div>"; // End of Vault class div
