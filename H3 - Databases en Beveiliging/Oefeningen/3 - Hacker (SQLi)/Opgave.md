@@ -1,6 +1,6 @@
-# Opgave: H3 Oefening 2
+# Opgave: H3 Oefening 3
 
-## 2 - Hacker (SQLi)
+## 3 - Hacker (SQLi)
 
 SQLi van het type: **In-Band**
 
