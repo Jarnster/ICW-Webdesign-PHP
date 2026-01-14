@@ -17,3 +17,15 @@
 - Delete en edit werken op basis van de GET parameter: id
 - delete.php verwijdert de auto met zijn ID onmiddelijk en stuurt je vervolgens terug naar index.php
 - update.php toont een form (POST) om een auto te updaten. Als je bevestigt met een <button type="submit">Bevestig aanpassingen</button>, dan wordt de auto info bijgewerkt in de tabel én je wordt teruggestuurd naar index.php
+
+---
+
+## Uitbreiding:
+- Maak nieuwe tabel aan in de database: `users`: id, username, email, role_id, password_hash
+- Maak een nieuwe tabel aan in database: `roles`: id, name, description
+- Maak nieuwe tabel aan in database: `role_permissions`: id, role_id, view_vehicles (bool, default: false), edit_vehicles (bool, default: false), remove_vehicles (bool, default: false)
+- Voeg enkele gebruikers, rollen en bijbehorende role_permissions toe: zoals Mechanieker, Senior Mechanieker, Hoofd Garagist, Teamleider en Baas
+- Zorg ervoor dat elke pagina nu afgescheremd is, en enkel zichtbaar voor gebruikers met de juiste permissies in hun rol: dit ga je maken met behulp van zogenaamde "helper functions"/"utils"
+- Maak een beschermde pagina: admin.php
+- Bescherm toegang tot alle bestaande pagina's
+- Maak een login/logout systeem
