@@ -40,8 +40,8 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `firstname`, `lastname`, `email`, `created_at`) VALUES
-(1, 'Emmanuel', 'Verlinden', 'mail@mail.com', '2026-01-08 13:36:20'),
-(3, 'Emmanuel', 'Hallo', 'haha.123@kklkl.test', '2026-01-08 14:31:53');
+(1, 'Hey', 'Hallo', 'mail@mail.com', '2026-01-08 13:36:20'),
+(3, 'Naam', 'HalloAndere naam', 'haha.123@kklkl.test', '2026-01-08 14:31:53');
 
 --
 -- Indexen voor geëxporteerde tabellen
