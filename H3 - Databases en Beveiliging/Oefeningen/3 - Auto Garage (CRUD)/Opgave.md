@@ -1,6 +1,6 @@
-# Opgave: H3 Oefening 2
+# Opgave: H3 Oefening 3
 
-## 2 - Auto Garage (CRUD)
+## 3 - Auto Garage (CRUD)
 
 ---
 
@@ -20,7 +20,7 @@
 
 ---
 
-## Uitbreiding:
+## 🌟🌟Verdieping - Uitgebreide Authenticatie:
 - Maak nieuwe tabel aan in de database: `users`: id, username, email, role_id, password_hash
 - Maak een nieuwe tabel aan in database: `roles`: id, name, description
 - Maak nieuwe tabel aan in database: `role_permissions`: id, role_id, view_vehicles (bool, default: false), edit_vehicles (bool, default: false), remove_vehicles (bool, default: false)

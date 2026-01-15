@@ -1,6 +1,6 @@
-# Opgave: H3 Oefening 4
+# Opgave: H3 Oefening 2
 
-## 4 - Authenticatie
+## 2 - Simpele Authenticatie
 
 ---
 

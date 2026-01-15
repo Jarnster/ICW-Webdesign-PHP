@@ -1,6 +1,6 @@
-# Opgave: H3 Oefening 3
+# Opgave: H3 Oefening 5
 
-## 3 - Hacker (SQLi)
+## 5 - Hacker (SQLi)
 
 SQLi van het type: **In-Band**
 
@@ -16,7 +16,7 @@ SQLi van het type: **Inferential/Blind** (uitdagend)
 
 ### Opgave:
 - Deze oefening is een volledige ⭐Uitdaging.
-- Toegepast op: "H3 Oefening 1 - Leerlingentabel (CRUD)"
+- Toegepast op: "H3 Oefening 1 - Leerlingentabel (CRUD)" of "H3 Oefening 3 - Auto Garage (CRUD)"
 - De kans is groot dat je nog geen sanitizatie en validatie hebt ingebouwd. Als dat wel zo is: dan kan je deze oefening niet doen (verwijder validatie en sanitizatie uit je code)
 - Probeer de controle over te nemen van je database door enkel gebruik te maken van je website (geen aanpassingen in de code). Zorg ervoor dat je jouw eigen tabelstructuur goed in je hoofd hebt gevisualiseerd (neem het er eventueel bij)
 - Maak een invoer in je formulier waarbij je probeert schade te verrichten in je database. Schade verrichten: tabel verwijderen
