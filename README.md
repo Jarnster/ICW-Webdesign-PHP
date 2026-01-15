@@ -39,7 +39,7 @@ Kahoot H1+H2: https://create.kahoot.it/share/icw-webdesign-php-h1-en-h2/b572320c
 
 ---
 
-## [H3] Databases en Beveiliging
+## [H3] Databases (PDO), Sessions & Cookies, Beveiliging
 
 Dit is een groot hoofdstuk waarin je omgang met databases leert, maar ook het veilig gebruik ervan. Je leert ook allerlei zaken bij over hoe password hashing en security het best werkt.
 
