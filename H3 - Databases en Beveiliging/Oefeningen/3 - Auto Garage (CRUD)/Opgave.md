@@ -4,7 +4,7 @@
 
 ---
 
-### Opgave:
+### Opgave - Basis Authenticatie:
 *Op dit moment nog geen validatie of sanitizatie inbouwen*
 - Baseer je op jouw eerder gemaakte code in "1 - Leerlingentabel (CRUD)" om de oefening te voltooien
 - Maak een nieuwe database in phpMyAdmin (http://localhost:8000/phpmyadmin) aan, met naam: "garage"
@@ -20,7 +20,7 @@
 
 ---
 
-## 🌟🌟Verdieping - Uitgebreide Authenticatie (RBAC-principe):
+## 🌟🌟Verdieping - Uitgebreid met Authorisatie (RBAC-principe):
 - Maak nieuwe tabel aan in de database: `users`: id, username, email, role_id, password_hash
 - Maak een nieuwe tabel aan in database: `roles`: id, name, description
 - Maak nieuwe tabel aan in database: `role_permissions`: id, role_id, view_vehicles (bool, default: false), edit_vehicles (bool, default: false), remove_vehicles (bool, default: false)
@@ -30,3 +30,4 @@
 - Bescherm toegang tot alle bestaande pagina's
 - Maak een login/logout systeem
 - Extra: Maak rollen en hun permissies instelbaar via een webinterface
+- 💡Tip! Maak de permissie controles generaliseerbaar (bijvoorbeeld een `function CheckIfUserCan(int $user_id, $permission): bool` in een utils.php bestand)
