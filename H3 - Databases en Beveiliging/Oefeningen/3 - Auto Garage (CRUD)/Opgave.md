@@ -20,7 +20,7 @@
 
 ---
 
-## 🌟🌟Verdieping - Uitgebreide Authenticatie:
+## 🌟🌟Verdieping - Uitgebreide Authenticatie (RBAC-principe):
 - Maak nieuwe tabel aan in de database: `users`: id, username, email, role_id, password_hash
 - Maak een nieuwe tabel aan in database: `roles`: id, name, description
 - Maak nieuwe tabel aan in database: `role_permissions`: id, role_id, view_vehicles (bool, default: false), edit_vehicles (bool, default: false), remove_vehicles (bool, default: false)
@@ -29,3 +29,4 @@
 - Maak een beschermde pagina: admin.php
 - Bescherm toegang tot alle bestaande pagina's
 - Maak een login/logout systeem
+- Extra: Maak rollen en hun permissies instelbaar via een webinterface

@@ -7,6 +7,8 @@
 
 In deze README.md kan je de inhoudstabel vinden voor elk hoofdstuk. Alle PowerPoints, Oefeningen, Quiz, ... staan in de individuele mappen van elk hoofdstuk.
 
+Sommige mogelijke oplossingen werden ingediend door leerlingen: correctheid niet altijd gegarandeerd
+
 ---
 
 ## [H1] Intro

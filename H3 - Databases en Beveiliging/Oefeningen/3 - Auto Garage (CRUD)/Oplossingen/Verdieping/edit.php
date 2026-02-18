@@ -10,6 +10,10 @@ if (!isset($_SESSION['user'])) {
     exit;
 }
 
+if (!CheckIfUserCan($_SESSION['user']['id'], 'edit_vehicles')):
+    header("Location: login.php");
+endif;
+
 $pdo = new PDO('mysql:host=127.0.0.1;dbname=garage', 'root', '');
 $id = $_GET['id'];
 

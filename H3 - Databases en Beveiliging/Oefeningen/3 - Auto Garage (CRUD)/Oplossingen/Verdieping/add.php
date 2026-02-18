@@ -9,6 +9,10 @@ if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit;
 }
+
+if (!CheckIfUserCan($_SESSION['user']['id'], 'add_vehicles')):
+    header("Location: login.php");
+endif;
 ?>
 
 <a href="index.php">Terug/annuleren</a>

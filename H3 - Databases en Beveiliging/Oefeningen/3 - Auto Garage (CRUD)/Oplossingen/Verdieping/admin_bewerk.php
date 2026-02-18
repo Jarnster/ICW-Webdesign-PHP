@@ -5,7 +5,7 @@
 session_start();
 require_once 'utils.php';
 
-if (CheckIfUserCan($_SESSION['user']['id'], 'role_permissions')):
+if (!CheckIfUserCan($_SESSION['user']['id'], 'role_permissions')):
     header("Location: login.php");
 endif;
 
