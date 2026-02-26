@@ -61,10 +61,10 @@ Kahoot H3: https://create.kahoot.it/share/icw-webdesign-php-h3/03a6028c-46fb-49a
 
 ---
 
-## [H4] Object-oriented programming (OOP)
+## [H4] Application Programming Interface (API)
 TBD
 
 ---
 
-## [H5] Application Programming Interface (API)
+## [H5] Object-oriented programming (OOP)
 TBD
