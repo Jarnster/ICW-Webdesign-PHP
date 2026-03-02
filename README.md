@@ -59,10 +59,15 @@ Dit is een groot hoofdstuk waarin je omgang met databases leert, maar ook het ve
 
 Kahoot H3: https://create.kahoot.it/share/icw-webdesign-php-h3/03a6028c-46fb-49a4-bca1-eec613519109
 
+Aan de slag met HackTheBox.
+
 ---
 
 ## [H4] Application Programming Interface (API)
-TBD
+- Wat is een API?
+- Gebruiksscenario's en voorbeelden
+- Zelf toepassing maken met gebruik van externe API
+- Zelf een eenvoudige API beschikbaar stellen
 
 ---
 
