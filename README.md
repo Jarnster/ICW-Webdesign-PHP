@@ -7,7 +7,7 @@
 
 In deze README.md kan je de inhoudstabel vinden voor elk hoofdstuk. Alle PowerPoints, Oefeningen, Quiz, ... staan in de individuele mappen van elk hoofdstuk.
 
-Sommige mogelijke oplossingen werden ingediend door leerlingen: correctheid niet altijd gegarandeerd
+Sommige mogelijke oplossingen werden ingediend door leerlingen: correctheid niet altijd gegarandeerd.
 
 ---
 
@@ -53,7 +53,7 @@ Dit is een groot hoofdstuk waarin je omgang met databases leert, maar ook het ve
 - SQL Injection (In-Band, Inferential/Blind, Out-of-Band)
 - Validatie en sanitizatie
 - Password hashing
-- Hashing algoritmes en password cracking (evt. CrackStation) (Brute Force vs Dictionary)
+- Hashing algoritmes en password cracking (incl. Fitcrack/Hashtopolis) (Brute Force vs Dictionary)
 - Sessies uitgebreid (Cookies, storage, syntax)
 - Authenticatie: inloggen, registreren, uitloggen, beschermde pagina
 
