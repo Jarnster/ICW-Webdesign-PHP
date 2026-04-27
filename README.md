@@ -72,4 +72,5 @@ Aan de slag met HackTheBox.
 ---
 
 ## [H5] Object-oriented programming (OOP)
-TBD
+- Organiseren van code
+- Vorige opdrachten herwerken in een gestructureerde codebase (gebruik maken van OOP)
