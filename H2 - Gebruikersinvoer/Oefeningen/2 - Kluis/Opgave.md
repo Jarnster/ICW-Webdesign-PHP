@@ -23,7 +23,7 @@ print_r($_POST);
 - ➕Toevoeging: Zorg ervoor dat de PIN-code nu een wachtwoord (string) is. Het wachtwoord mag ook met hoofdletters geschreven zijn, en moet nog steeds juist gerekend worden.
 
 - ⭐⭐Uitdaging: Bewaar het aantal pogingen. Blokkeer toegang indien er meer dan 4x onjuiste pogingen waren. 
-  Toon ook het aantal pogingen over. Indien het aantal pogingen minder dan 2 bedraagt, moet de tekst rood zijn.
+  Toon ook het aantal pogingen over. Indien het aantal pogingen minder dan 2 bedraagt, moet de tekst rood zijn. (principe van "rate limiting")
 
 ---
 
